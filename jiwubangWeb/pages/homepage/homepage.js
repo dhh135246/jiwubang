@@ -1,26 +1,36 @@
 // pages/homepage/homepage.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+   
     tabs: [],
     activeTab: 0,
-    tabActiveTextColor:'#00ffff',
-    tabInactiveTextColor:'#00ffff',
+    tabActiveTextColor: '#78a1ec',
+    tabInactiveTextColor: '#78a1ec',
+    tabUnderlineColor: '#78a1ec', 
     list: [{
       "text": "信息求助",
-      "iconPath": "",
-      "selectedIconPath": "",
+      "iconPath": "/icons/一级图标1.png",
+      "selectedIconPath": "/icons/一级图标1.png",
+      "switchToPage": "../requireInfo/requireInfo",
     },
     {
       "text": "信息提供",
-      "iconPath": "",
-      "selectedIconPath": "",
+      "iconPath": "/icons/一级图标2.png",
+      "selectedIconPath": "/icons/一级图标2.png",
+      "switchToPage": "../provideInfo/provideInfo",
     }]
 
   },
+
+  tabChange(e) {
+    console.log('tab change', e)
+    },
 
   /**
    * 生命周期函数--监听页面加载
@@ -30,7 +40,10 @@ Page({
     const tabs = titles.map(item => ({ title: item }))
     this.setData({ tabs })
 
+    
   },
+ 
+
 
   onTabCLick(e) {
     const index = e.detail.index

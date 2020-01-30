@@ -1,9 +1,10 @@
 {
-  
   "pages": [
+    "pages/homepage/homepage",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/homepage/homepage"
+    "pages/provideInfo/provideInfo",
+    "pages/requireInfo/requireInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

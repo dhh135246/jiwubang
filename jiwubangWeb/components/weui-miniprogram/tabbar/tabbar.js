@@ -98,6 +98,7 @@ Component({
         addGlobalClass: true
     },
     properties: {
+        
         extClass: {
             type: String,
             value: ''
@@ -116,6 +117,9 @@ Component({
             var index = e.currentTarget.dataset.index;
 
             if (index === this.data.current) {
+                wx.navigateTo({
+                  url: '../index/index'
+                })
                 return;
             }
             this.setData({
@@ -123,6 +127,7 @@ Component({
             });
             this.triggerEvent('change', { index: index, item: this.data.list[index] });
         }
+      
     }
 });
 
