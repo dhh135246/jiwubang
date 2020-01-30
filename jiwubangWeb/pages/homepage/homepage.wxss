@@ -1,0 +1,33 @@
+/* pages/homepage/homepage.wxss */
+.container{
+  height:100%;
+  background-color: gray;
+  display:flex;
+  flex-direction:column;
+
+}
+
+.weui-tabs-bar__item {
+  font-size:35rpx;
+  padding:0 90rpx;
+  padding-top:20rpx;
+  
+}
+
+.weui-tabs-bar__content{
+  padding:0 10rpx;
+
+  
+}
+.weui-tabs{
+  position:relative;
+  top:450rpx;
+  padding:0 200rpx;
+  background-color: red;
+  height:1000rpx;
+}
+.weui-tabbar  {
+  background-color: yellow;
+ box-shadow: 10px 10px 5px #888888;
+}
+
